@@ -14,15 +14,18 @@
     </div>
     </div>
     <script>
-      var app = new Vue({
-        el: "#app",
-        data{
-          words:[
-            {text:"ㅇㅇ"},
-            {text:"ㅋㅋ"}
-          ]
-        }
-      })
+      export default{
+        name:"App",
+        components:{},
+        data:(){
+          return{
+            words=[
+              {text:"소양"},
+              {text:"예문"}
+            ]
+          };
+        },
+      };
     </script>
   </body>
 </html>
