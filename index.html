@@ -9,15 +9,18 @@
 <link rel="stylesheet" href = "style.css">
   <body>
     <div id="app">
-    <div class="wordbox">
+    <div class="wordbox" v-for="word in words">
     <p>{{word}}</p>
     </div>
     </div>
     <script>
       var app = new Vue({
         el: "#app",
-        data:{
-          word:"ㅇㅇ"
+        data{
+          words:[
+            {message:"ㅇㅇ"},
+            {message:"ㅋㅋ"}
+          ]
         }
       })
     </script>
