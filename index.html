@@ -9,7 +9,7 @@
 <link rel="stylesheet" href = "style.css">
   <body>
     <div id="app">
-    <div v-for="word in words">
+    <div v-for="word in words" :key="word">
     <div class="wordbox">
     <p>{{word}}</p>
     </div>
