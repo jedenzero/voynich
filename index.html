@@ -9,23 +9,26 @@
 <link rel="stylesheet" href = "style.css">
   <body>
     <div id="app">
-    <div class="wordbox">
-    <p v-for="word in words">{{word}}</p>
-    </div>
+    <wordbox
+      v-for="word in words"
+      v-bind:todo="word"
+      v-bind:key="word">
+    </wordbox>
     </div>
     <script>
-      export default{
-        name:"App",
-        components:{},
-        data:(){
-          return{
-            words=[
-              {text:"소양"},
-              {text:"예문"}
+      Vue.component("wordbox",{
+        props:["word"],
+        template:"<div class="wordbox">{{word}}</div>"
+      })
+      var app = new Vue({
+          el: "#app",
+          data: {
+            words: [
+              {text:"황량"},
+              {text:"황혼"},
             ]
-          };
-        },
-      };
+          }
+        })
     </script>
   </body>
 </html>
