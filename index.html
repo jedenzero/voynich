@@ -10,6 +10,7 @@
 <link rel="stylesheet" href = "style.css">
   <body>
     <template>
+    {{words[0]}}
     <wordbox v-for="word in words :key="word" v-bind:word="word"></wordbox>
     </template>
     <script>
