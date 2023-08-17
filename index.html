@@ -10,11 +10,7 @@
 <link rel="stylesheet" href = "style.css">
   <body>
     <template>
-    <wordbox
-      v-for="word in words"
-      v-bind:word="word"
-      v-bind:key="word">
-    </wordbox>
+    <wordbox v-for="word in words :key="word" " v-bind:word="word"></wordbox>
     </template>
     <script>
       Vue.component("wordbox",{
