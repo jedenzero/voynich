@@ -5,7 +5,6 @@
 	  <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	  <title>voynich</title>
-      <script src="https://unpkg.com/vue"></script>
   </head>
 <link rel="stylesheet" href = "style.css">
   <body>
@@ -13,6 +12,7 @@
     {{words[0]}}
     <wordbox v-for="word in words :key="word" v-bind:word="word"></wordbox>
     </template>
+    <script src="https://unpkg.com/vue"></script>
     <script>
       Vue.component("wordbox",{
         props:["word"],
