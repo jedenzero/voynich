@@ -9,15 +9,10 @@
 <link rel="stylesheet" href = "style.css">
   <body>
     <template>
-    <p>{{words[0]}}</p>
-    <wordbox v-for="word in words :key="word" v-bind:word="word"></wordbox>
+    <p v-for="word in words">{{word}}</p>
     </template>
     <script src="https://unpkg.com/vue"></script>
     <script>
-      Vue.component("wordbox",{
-        props:["word"],
-        template:"<div class="wordbox">{{word}}</div>"
-      })
       export default{
           name: "app",
           data(){
