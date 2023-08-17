@@ -5,6 +5,7 @@
 	  <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	  <title>voynich</title>
+    <script src="https://unpkg.com/vue"></script>
   </head>
 <link rel="stylesheet" href = "style.css">
   <body>
@@ -12,7 +13,6 @@
     dkdkc
     <p v-for="word in words">{{word}}</p>
     </template>
-    <script src="https://unpkg.com/vue"></script>
     <script>
       export default{
           name: "app",
