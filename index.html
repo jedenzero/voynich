@@ -10,28 +10,28 @@
 <link rel="stylesheet" href = "style.css">
   <body>
     <template>
-    <div id="app">
     <wordbox
       v-for="word in words"
       v-bind:word="word"
       v-bind:key="word">
     </wordbox>
-    </div>
     </template>
     <script>
       Vue.component("wordbox",{
         props:["word"],
         template:"<div class="wordbox">{{word}}</div>"
       })
-      var app = new Vue({
-          el: "#app",
-          data: {
-            words: [
-              {text:"황량"},
-              {text:"황혼"},
-            ]
+      export default{
+          name: "app",
+          data(){
+            return{
+              words: [
+                {text:"황량"},
+                {text:"황혼"},
+              ]
+            }
           }
-        })
+        }
     </script>
   </body>
 </html>
