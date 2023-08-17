@@ -9,6 +9,7 @@
   </head>
 <link rel="stylesheet" href = "style.css">
   <body>
+    <template>
     <div id="app">
     <wordbox
       v-for="word in words"
@@ -16,6 +17,7 @@
       v-bind:key="word">
     </wordbox>
     </div>
+    </template>
     <script>
       Vue.component("wordbox",{
         props:["word"],
