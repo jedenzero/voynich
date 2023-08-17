@@ -10,18 +10,17 @@
 <link rel="stylesheet" href = "style.css">
   <body>
     <template>
-    dkdkc
-    <p v-for="word in words">{{word}}</p>
+    <div id="app">
+    dkdkc{{words}}
+    </div>
     </template>
     <script>
-      export default{
-          name: "app",
-          data(){
-            return{
-              words: ["AA", "BB"]
-            }
-          }
-        }
+      var app = new Vue({
+      el: '#app',
+      data: {
+        words:"aa"
+      }
+      })    
     </script>
   </body>
 </html>
