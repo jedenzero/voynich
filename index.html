@@ -10,8 +10,15 @@
   <body>
     <div id="app">
         What's happening?🤔
-	<input required type="text" placeholder="추가할 단어" v-model:"word">
-	<input required type="text" placeholder="추가할 단어" v-model:"meaning">
+	<div v-on:submit.prevent="add">
+	<p>
+	   <input required type="text" placeholder="단어" v-model:"word">
+        </p>
+	<p>
+	   <input required type="text" placeholder="단어 뜻" v-model:"meaning">
+        </p>
+	<button type="submit">추가하기</button>
+	</div>
         <div v-for="item in dictionary" class="wordbox"><h2 style="color:#141414;">{{ item.word }}</h2><hr><div style="color:#505050;">{{item.meaning}}</div></div>
     </div>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
@@ -23,6 +30,17 @@
      meaning:null,
      dictionary:[{word:"攻襲警報", meaning:"공습경보!!"},{word:"例文",meaning:"예시로 나온 문장이라는 뜻"}]
     }
+    }
+    methods:{
+	add(){
+	   let imsi={
+	      word:this.word,
+	      meaning:this.meaning
+	   }
+	   this.dictionary.push(imsi)
+	   this.word=null
+	   this.meaning=null
+	}
     }
     })
     app.mount('#app')
