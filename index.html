@@ -10,16 +10,16 @@
   <body>
     <div id="app">
         What's happening?🤔
-        <div class="wordbox>
-          {{message}}
-        </div>
+        <ul>
+          <li v-for="item in messages">{{ item.word }}</li>
+        </ul>
     </div>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script>
     const app = Vue.createApp({
     data() {
     return {
-     message: "!攻襲驚報!"
+     messages:[{word:"攻襲警報"}]
     }
     }
     })
