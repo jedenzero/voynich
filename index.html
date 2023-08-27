@@ -10,7 +10,7 @@
   <body>
     <div id="app">
         What's happening?🤔
-	<div v-on:submit.prevent="add">
+	<form v-on:submit.prevent="add">
 	<p>
 	   <input required type="text" placeholder="단어" v-model:"imsiword">
         </p>
@@ -18,7 +18,7 @@
 	   <input required type="text" placeholder="단어 뜻" v-model:"imsimeaning">
         </p>
 	<button type="submit">추가하기</button>
-	</div>
+	</form>
         <div v-for="item in dictionary" class="wordbox"><h2 style="color:#141414;">{{ item.word }}</h2><hr><div style="color:#505050;">{{item.meaning}}</div></div>
     </div>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
