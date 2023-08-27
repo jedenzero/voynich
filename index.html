@@ -10,9 +10,7 @@
   <body>
     <div id="app">
         What's happening?🤔
-        <ul>
-          <li v-for="item in messages">{{ item.word }}</li>
-        </ul>
+          <div v-for="item in messages" class="wordbox">{{ item.word }}</div>
     </div>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script>
