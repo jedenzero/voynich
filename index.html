@@ -5,9 +5,22 @@
 	  <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	  <title>voynich</title>
-    <script src="https://unpkg.com/htmx.org@1.8.6"></script>
   </head>
   <body>
-    <button hx-confirm="!攻襲驚報!">What's happening?</button>
+    <div id="app">
+        What's happening?🤔
+        {{messege}}
+    </div>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script>
+    const app = Vue.createApp({
+    data() {
+    return {
+     message: "!攻襲驚報!"
+    }
+    }
+    })
+    app.mount('#app')
+    </script>
   </body>
 </html>
