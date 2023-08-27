@@ -12,10 +12,10 @@
         What's happening?🤔
 	<div v-on:submit.prevent="add">
 	<p>
-	   <input required type="text" placeholder="단어" v-model:"word">
+	   <input required type="text" placeholder="단어" v-model:"imsiword">
         </p>
 	<p>
-	   <input required type="text" placeholder="단어 뜻" v-model:"meaning">
+	   <input required type="text" placeholder="단어 뜻" v-model:"imsimeaning">
         </p>
 	<button type="submit">추가하기</button>
 	</div>
@@ -26,20 +26,20 @@
     const app = Vue.createApp({
     data() {
     return {
-     word:null,
-     meaning:null,
+     imsiword:null,
+     imsimeaning:null,
      dictionary:[{word:"攻襲警報", meaning:"공습경보!!"},{word:"例文",meaning:"예시로 나온 문장이라는 뜻"}]
     }
     }
     methods:{
 	add(){
 	   let imsi={
-	      word:this.word,
-	      meaning:this.meaning
+	      word:this.imsiword,
+	      meaning:this.imsimeaning
 	   }
 	   this.dictionary.push(imsi)
-	   this.word=null
-	   this.meaning=null
+	   this.imsiword=null
+	   this.imsimeaning=null
 	}
     }
     })
