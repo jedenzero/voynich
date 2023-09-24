@@ -7,6 +7,9 @@ h2{
 hr{
    background-color:#141414;
 }
+.container{
+  padding:20px;
+}
 .box{
     max-width:250px;
 	background-color:#FFFFFF;
