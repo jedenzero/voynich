@@ -27,6 +27,7 @@ hr{
 blockquote{
   display:block;
   background: #ffffff;
+  color:#505050;
   padding: 10px 20px 10px 20px;
   border-left:2px solid #505050;
 }
