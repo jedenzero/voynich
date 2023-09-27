@@ -8,7 +8,9 @@ hr{
    background-color:#141414;
 }
 .container{
+  max-width:300px;
   padding:20px;
+  margin:auto;
 }
 .box{
     max-width:250px;
