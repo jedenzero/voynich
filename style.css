@@ -59,9 +59,6 @@ tr:last-child td:first-child {
 tr:last-child td:last-child {
   border-bottom-right-radius: 20px;
 }
-table,tr,td{
-  border:1px solid #C8C8C8;
-}
 @media (min-width:992px){
    .container{
      max-width:500px;
