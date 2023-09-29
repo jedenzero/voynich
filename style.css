@@ -46,6 +46,7 @@ td{
   padding:10px;
 }
 body::-webkit-scrollbar {
+  width:0;
   display: none;
 }
 @media (min-width:992px){
