@@ -60,6 +60,7 @@ td{
 }
 .box::-webkit-scrollbar {
   display: none;
+  background:transparent;
 }
 @media (min-width:992px){
    .container{
