@@ -58,8 +58,8 @@ table{
 td{
   padding:10px;
 }
-.box::-webkit-scrollbar {
-  display: none;
+.box::-webkit-scrollbar{
+  display:none;
   background:transparent;
 }
 @media (min-width:992px){
