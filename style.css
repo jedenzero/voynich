@@ -36,8 +36,11 @@ a{
     box-shadow:inset 0px 0px 15px 1px #FF0000;
 }
 table::before{
+    content:".";
+    color:#00000000;
     background-color:#FF0000;
     width:10px;
+    position:fixed;
 }
 .wordbox{
   max-width:250px;
