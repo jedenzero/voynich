@@ -1,5 +1,6 @@
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css");
-body{font-family:"Pretendard";font-weight:400,900;color:#141414;}
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard-jp.css");
+body{font-family:"Pretendard", "Pretendard JP";font-feature-settings: "ss05";font-weight:400,900;color:#141414;}
 hr{
    background-color:#141414;
 }
