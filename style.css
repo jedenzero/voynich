@@ -37,9 +37,11 @@ a{
 }
 table::before{
     content:".";
+    display:inline-block;
     color:#00000000;
     background-color:#FF0000;
     width:10px;
+    height:100%;
     position:sticky;
     left:10px;
 }
