@@ -41,7 +41,7 @@ table::before{
     background-color:#FF0000;
     width:10px;
     position:sticky;
-    left:10;
+    left:10px;
 }
 .wordbox{
   max-width:250px;
