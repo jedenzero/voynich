@@ -47,6 +47,7 @@ table{
 }
 tbody::before{
     content:".";
+    display:inline-box;
     position:sticky;
     color:#00000000;
     background-color:#FF0000;
