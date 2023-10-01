@@ -14,6 +14,7 @@ a{
   margin:auto;
 }
 .box{
+    position:relative;
     max-width:250px;
     overflow-x:auto;
 	background-color:#FFFFFF;
@@ -40,17 +41,15 @@ blockquote{
   border-left:2px solid #505050;
 }
 table{
-  display:inline-block;
   white-space:nowrap;
 }
 table::before{
     content:".";
-    display:inline-block;
+    position:absolutive;
     color:#00000000;
     background-color:#FF0000;
     width:10px;
     height:100%;
-    position:sticky;
     left:0;
     top:0;
 }
