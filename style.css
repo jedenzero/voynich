@@ -15,6 +15,7 @@ a{
 }
 .box{
     position:relative;
+    white-space:nowrap;
     max-width:250px;
     overflow-x:auto;
 	background-color:#FFFFFF;
@@ -41,13 +42,13 @@ blockquote{
   border-left:2px solid #505050;
 }
 table{
-  display:inline;
+  display:inline-table;
   margin:0;
   white-space:nowrap;
 }
-tbody::before{
+.box::before{
     content:".";
-    display:inline-box;
+    display:inline-block;
     position:sticky;
     color:#00000000;
     background-color:#FF0000;
