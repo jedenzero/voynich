@@ -17,6 +17,7 @@ a{
     position:relative;
     white-space:nowrap;
     max-width:250px;
+    height:auto;
     overflow-x:auto;
 	background-color:#FFFFFF;
     box-sizing:border-box;
