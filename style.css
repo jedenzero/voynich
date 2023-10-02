@@ -47,7 +47,7 @@ table{
   margin:0;
   white-space:nowrap;
 }
-.table::before{
+.box::before{
     content:".";
     display:inline-block;
     position:sticky;
@@ -56,6 +56,17 @@ table{
     width:20px;
     height:100px;
     left:0;
+    top:0;
+}
+.box::after{
+    content:".";
+    display:inline-block;
+    position:sticky;
+    color:#00000000;
+    background-color:#FF0000;
+    width:20px;
+    height:100px;
+    right:0;
     top:0;
 }
 td{
