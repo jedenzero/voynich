@@ -47,7 +47,7 @@ table{
   margin:0;
   white-space:nowrap;
 }
-.box::before{
+.table::before{
     content:".";
     display:inline-block;
     position:sticky;
