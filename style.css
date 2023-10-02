@@ -44,7 +44,7 @@ blockquote{
 }
 table{
   display:inline-table;
-  width:100%;
+  width:250px;
   margin:0;
   white-space:nowrap;
 }
