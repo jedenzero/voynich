@@ -51,7 +51,7 @@ table{
 .box::before{
     content:".";
     display:inline-block;
-    position:sticky;
+    position:absolute;
     color:#00000000;
     background-color:#FF000080;
     width:250px;
