@@ -4,6 +4,9 @@ body{font-family:"Pretendard JP","Pretendard";font-feature-settings:"ss05";font-
 hr{
    background-color:#141414;
 }
+p{
+   line-height:1.5;
+}
 a{
   text-decoration:none;
   color:#505050;
