@@ -15,7 +15,6 @@ a{
 }
 .box{
     position:relative;
-    display:flex;
     white-space:nowrap;
     max-width:250px;
     height:auto;
@@ -45,7 +44,6 @@ blockquote{
 }
 table{
   display:inline-table;
-  order:2;
   width:250px;
   margin:0;
   white-space:nowrap;
@@ -53,7 +51,6 @@ table{
 .box::before{
     content:".";
     display:inline-block;
-    order:1;
     position:sticky;
     color:#00000000;
     background-color:#FF000080;
