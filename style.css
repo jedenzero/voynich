@@ -56,17 +56,8 @@ table{
     order:1;
     position:sticky;
     color:#00000000;
-    background-color:#FF0000;
-    width:10px;
-}
-.box::after{
-    content:".";
-    display:inline-block;
-    order:3;
-    position:sticky;
-    color:#00000000;
-    background-color:#FF0000;
-    width:10px;
+    background-color:#FF000080;
+    width:250px;
 }
 td{
   padding:10px;
