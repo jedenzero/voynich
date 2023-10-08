@@ -62,7 +62,7 @@ table{
 td{
   padding:10px;
 }
-::-webkit-scrollbar{
+scroll::-webkit-scrollbar{
   display:none;
   background:transparent;
 }
