@@ -39,6 +39,16 @@ img{
     margin:10px;
     box-shadow: 0px 5px 8px 1px #C8C8C8;
 }
+.toc{
+  position:fixed;
+  width:auto;
+  height:auto;
+  padding:10px 15px;
+  box-sizing:border-box;
+  border-radius: 20px;
+  top:50px;
+  right:0;
+}
 .scroll{
    width:100%;
    overflow-x:auto;
