@@ -20,6 +20,7 @@ img{
   margin:auto;
 }
 .box{
+    display:inline-box;
     white-space:nowrap;
     width:auto;
     height:auto;
