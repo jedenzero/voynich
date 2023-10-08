@@ -41,11 +41,12 @@ img{
 }
 .toc{
   position:fixed;
-  width:auto;
+  width:120px;
   height:auto;
   padding:10px 15px;
   box-sizing:border-box;
   border-radius: 20px;
+  background-color:#FFFFFF;
   top:50px;
   right:0;
 }
