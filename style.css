@@ -41,9 +41,9 @@ img{
 }
 .toc{
   position:fixed;
-  width:120px;
+  width:150px;
   height:auto;
-  padding:10px;
+  padding:25px;
   box-sizing:border-box;
   border-radius: 10px;
   background-color:#FFFFFF;
@@ -75,7 +75,7 @@ table{
 td{
   padding:10px;
 }
-scroll::-webkit-scrollbar{
+.scroll::-webkit-scrollbar{
   display:none;
   background:transparent;
 }
