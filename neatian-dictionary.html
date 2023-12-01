@@ -14,6 +14,7 @@
       border-bottom:1px solid #5C90FF;
       width:200px;
       margin:0 auto;
+      padding:10px;
     }
     .put{
       color:#5C90FF;
@@ -29,9 +30,19 @@
   </style>
   <link rel="stylesheet" href = "style.css">
   <body>
+    <p>これだ。</p>
     <div class="search">
-      <input type="text" class="put"style="">
+      <input type="text" class="put">
     </div>
-    <p>これ。</p>
+    <div id="exist" style="text-align:center;font-size:15px;">없어요.</div>
+    <scipt>
+      addEventListener("input",copy()
+      {
+        const puta=document.getElementByClassName("put");
+        const exista=document.getElementById("exist");
+        exista.textContent='"'+puta.textContent+'"'+"(을/를) 찾을 수 없습니다."
+        exista.style.display ="block";
+      });
+    </script>
   </body>
 </html>
