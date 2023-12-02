@@ -32,9 +32,11 @@
     <div class="search">
       <input type="text" class="put" onkeyup="searchWord()">
     </div>
-    <div id="exist" style="text-align:center;"></div>
+    <div style="text-align:center;width:200px;padding:10px;">
+      <div id="exist"></div>
+    </div>
     <script>
-      var dictionary = [
+     var dictionary = [
         {word: '안녕', meaning: '인사하는 말'},
         {word: '사랑', meaning: '강한 애정'},
         {word: '행복', meaning: '마음이 즐거운 상태'}
@@ -45,12 +47,12 @@
         var result = "";
       
         dictionary.forEach(function(item) {
-          if(item.word === input||item.meaning.includes(input)) {
-            result+="<h2>단어</h2><br>"+item.word+"<br>"+"<h2>뜻</h2><br>"+item.meaning+"<br>";
+          if(item.word.includes(input)||item.meaning.includes(input)) {
+            result+='<div style="font-size:20px;text-align:left;"><b>'+item.word+"</b></div>"+"<br>"+item.meaning+"<br>";
           }
         });
       
-        if(result==="") {
+        if(result===""){
           result='"'+input+'"(을/를) 찾을 수 없습니다.';
         }
         document.getElementById("exist").innerHTML = result;
