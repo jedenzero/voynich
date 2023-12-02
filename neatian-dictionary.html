@@ -46,18 +46,22 @@
     </div>
     <script>
      var dictionary = [
-        {word: '안녕', meaning: '인사하는 말'},
-        {word: '사랑', meaning: '강한 애정'},
-        {word: '행복', meaning: '마음이 즐거운 상태'}
+        {word:"veăšfil",meaning:"달빛"},
+        {word:"vex",meaning:"달"},
+        {word:"ijot",meaning:"하늘"},
+        {word:"lazen",meaning:"꽃"},
+        {word:"neă",meaning:"산"},
+        {word:"šljo",meaning:"바람"}
       ];
+      var imsi=dictionary.sort((a,b) => a.word<b.word ? -1 : 1);
       
       function searchWord() {
         var input = document.querySelector(".put").value;
         var result = "";
       
-        dictionary.forEach(function(item) {
+        imsi.forEach(function(item) {
           if(item.word.includes(input)||item.meaning.includes(input)) {
-            result+='<div class="boxbox">'+"<br>"+'<div style="text-align:left;"><b style="font-size:20px">'+item.word+"</b>"+'<div style="font-size:10px;">'+item.meaning+"</div></div></div>";
+            result+='<div class="boxbox">'+"<br>"+'<div style="text-align:left;"><b style="font-size:20px">'+item.word+"</b>"+'<div style="font-size:15px;">'+item.meaning+"</div></div></div>";
           }
         });
       
