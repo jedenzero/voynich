@@ -54,7 +54,7 @@
       
         dictionary.forEach(function(item) {
           if(item.word.includes(input)||item.meaning.includes(input)) {
-            result+="<div class="boxbox">"+"<br>"+'<div style="text-align:left;"><b style="font-size:20px">'+item.word+"</b>"+'<div font-size:10px>'+item.meaning+"</div></div></div>";
+            result+='<div class="boxbox">'+"<br>"+'<div style="text-align:left;"><b style="font-size:20px">'+item.word+"</b>"+'<div style="font-size:10px;">'+item.meaning+"</div></div></div>";
           }
         });
       
