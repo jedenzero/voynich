@@ -9,8 +9,6 @@
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap');
     .search{
-      position:relative;
-      top:80px;
       border-bottom:1px solid #5C90FF;
       width:200px;
       margin:0 auto;
@@ -43,7 +41,7 @@
       ];
       
       function searchWord() {
-        var input = document.getElementByClassName("put").value;
+        var input = document.querySelector(".put").value;
         var result = "";
       
         dictionary.forEach(function(item) {
