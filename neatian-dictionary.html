@@ -12,7 +12,7 @@
     body{
       font-family:"Montserrat","Pretendard";
       color:#282828;
-      font-weight:300,700;
+      font-weight:200,700;
     }
     .search{
       border-bottom:1px solid #5C90FF;
@@ -61,9 +61,9 @@
       
         imsi.forEach(function(item) {
           if(item.word.includes(input)||item.meaning.includes(input)) {
-            result+='<div class="boxbox">'+"<br>"+'<div style="text-align:left;"><b style="font-size:20px">'+item.word+"</b>";
+            result+='<div class="boxbox">'+"<br>"+'<div style="text-align:left;"><b style="font-size:20px;display:inline-block;">'+item.word+"</b>";
             if(item.origin!=null){
-               result+='<div style="color:#5C90FF;font-size:12px;">'+item.origin+"</div>";
+               result+='<div style="color:#5C90FF;font-size:12px;display:inline-block;">'+item.origin+"</div>";
             }
             result+='<div style="font-size:15px;">'+item.meaning+"</div>";
             if(item.comment!=null){
