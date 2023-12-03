@@ -7,12 +7,12 @@
 	  <title>voynich</title>
   </head>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap');
     @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css");
     body{
       font-family:"Montserrat","Pretendard";
       color:#282828;
-      font-weight:200,700;
+      font-weight:300,700;
     }
     .search{
       border-bottom:1px solid #5C90FF;
@@ -46,10 +46,10 @@
     </div>
     <script>
      var dictionary = [
-        {word:"veăšfil",meaning:"달빛",origin:"vex+šfil",comment:"",ex:"veăšfilem šfile.<br>달빛이 반짝인다."},
-        {word:"vex",meaning:"달"},
-        {word:"ijot",meaning:"하늘"},
-        {word:"lazen",meaning:"꽃"},
+        {word:"veăšfil",meaning:"달빛",origin:"vex+šfil",comment:"",ex:"Veăšfilem šfile.<br>달빛이 반짝인다."},
+        {word:"vex",meaning:"달",ex:"Vexeč once.<br>달을 본다."},
+        {word:"ijot",meaning:"하늘",ex:"Ijotem ičlaje.<br>하늘이 참 푸르다."},
+        {word:"lazen",meaning:"꽃",ex:"Sysontea lazen.<br>분분한 낙화."},
         {word:"neă",meaning:"산"},
         {word:"šljo",meaning:"바람"}
       ];
@@ -62,14 +62,14 @@
         imsi.forEach(function(item) {
           if(item.word.includes(input)||item.meaning.includes(input)) {
             result+='<div class="boxbox">'+"<br>"+'<div style="text-align:left;"><b style="font-size:20px">'+item.word+"</b>";
-            if(item.origin!=""){
+            if(item.origin!=null){
                result+='<div style="color:#5C90FF;font-size:12px;">'+item.origin+"</div>";
             }
             result+='<div style="font-size:15px;">'+item.meaning+"</div>";
-            if(item.comment!=""){
+            if(item.comment!=null){
                result+='<div style="color:#A0A0A0;font-size:10px;">'+item.comment+"</div>";
             }
-            result+='<div style="font-size:12px;color:#5C90FF;">'+item.ex+"</div></div></div>";
+            result+='<i style="font-size:12px;color:#5C90FF;">'+item.ex+"</i></div></div>";
           }
         });
       
