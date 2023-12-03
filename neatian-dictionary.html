@@ -7,12 +7,12 @@
 	  <title>voynich</title>
   </head>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;700&display=swap');
     @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css");
     body{
       font-family:"Montserrat","Pretendard";
       color:#282828;
-      font-weight:300,700;
+      font-weight:200,700;
     }
     .search{
       border-bottom:1px solid #5C90FF;
@@ -46,7 +46,7 @@
     </div>
     <script>
      var dictionary = [
-        {word:"veăšfil",meaning:"달빛"},
+        {word:"veăšfil",meaning:"달빛",origin:"vex+šfil",comment:"",ex:"veăšfilem šfile.<br>달빛이 반짝인다."},
         {word:"vex",meaning:"달"},
         {word:"ijot",meaning:"하늘"},
         {word:"lazen",meaning:"꽃"},
@@ -61,7 +61,15 @@
       
         imsi.forEach(function(item) {
           if(item.word.includes(input)||item.meaning.includes(input)) {
-            result+='<div class="boxbox">'+"<br>"+'<div style="text-align:left;"><b style="font-size:20px">'+item.word+"</b>"+'<div style="font-size:15px;">'+item.meaning+"</div></div></div>";
+            result+='<div class="boxbox">'+"<br>"+'<div style="text-align:left;"><b style="font-size:20px">'+item.word+"</b>";
+            if(item.origin!=""){
+               result+='<div style="color:#5C90FF;font-size:12px;">'+item.origin+"</div>";
+            }
+            result+='<div style="font-size:15px;">'+item.meaning+"</div>";
+            if(item.comment!=""){
+               result+='<div style="color:#A0A0A0;font-size:10px;">'+item.comment+"</div>";
+            }
+            result+='<div style="font-size:12px;color:#5C90FF;">'+item.ex+"</div></div></div>";
           }
         });
       
