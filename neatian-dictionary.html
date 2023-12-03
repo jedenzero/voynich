@@ -25,6 +25,7 @@
       border:none;
       outline:none;
       text-align:center;
+      font-family:"Montserrat","Pretendard";
       font-size:20px;
       width:200px;
       padding:0;
@@ -63,7 +64,7 @@
           if(item.word.includes(input)||item.meaning.includes(input)) {
             result+='<div class="boxbox">'+"<br>"+'<div style="text-align:left;"><b style="font-size:20px;display:inline-block;">'+item.word+"</b>";
             if(item.origin!=null){
-               result+='<div style="color:#5C90FF;font-size:12px;display:inline-block;margin-left:10px;">'+item.origin+"</div>";
+               result+='<div style="color:#5C90FF;font-size:12px;display:inline-block;margin-left:5px;">'+item.origin+"</div>";
             }
             result+='<div style="font-size:15px;">'+item.meaning+"</div>";
             if(item.comment!=null){
