@@ -15,5 +15,5 @@ var dictionary = [
   {word:"aj",meaning:"불",ex:""},
   {word:"ymvešfil",meaning:"유성",origin:"ymve+šfil",ex:"",comment:"유성의 형상이 마치 눈물이 흐르는 것 같아서 붙여진 이름이다. 따라서 ymvelyšfil이 맞지만 잘 쓰이지 않는다. 하늘의 눈물이라는 뜻의 ymvely ijotli라고도 한다."},
   {word:"soyla",meaning:"아침",ex:""},
-  {word:"taze",meaning:"이끌다",ex:""},
+  {word:"taze",meaning:"이끌다",ex:""}
 ];
