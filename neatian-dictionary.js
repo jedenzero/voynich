@@ -11,7 +11,7 @@ var dictionary = [
   {word:"ymve",meaning:"슬프다, 울다",ex:"Ymve je, ize es ejymvesul.<br>울어라, 너 혼자가 울 것이다."},
   {word:"ake",meaning:"있다",ex:"Šfilan akeči.<br>빛이 있으라."},
   {word:"člaje",meaning:"넓다, 푸르다",ex:"Vjej člajea isni<br>창백한 푸른 점"},
-  {word:"ačen",meaning:"화살",ex:"Ačeneze!<br>화살이다!"}
+  {word:"ačen",meaning:"화살",ex:"Ačeneze!<br>화살이다!"},
   {word:"aj",meaning:"불",ex:""},
   {word:"ymvešfil",meaning:"유성",origin:"ymve+šfil",ex:"",comment:"유성의 형상이 마치 눈물이 흐르는 것 같아서 붙여진 이름이다. 따라서 ymvelyšfil이 맞지만 잘 쓰이지 않는다. 하늘의 눈물이라는 뜻의 ymvely ijotli라고도 한다."},
   {word:"soyla",meaning:"아침",ex:""},
