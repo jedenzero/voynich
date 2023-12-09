@@ -28,14 +28,13 @@
   </style>
   <body>
     <div class="boxbox">
-        <h3><b>글들</b></h3>
         <p id="space"></p>
     </div>
     <p style="padding:20px;" id="content"></p>
     <script src="neatian-writings.js"></script>
     <script>
       function make() {
-        var result = "";
+        var result="<h3><b>글들</b></h3>";
         
         list.forEach(function(item) {
           result+='<p id="'+item.id+'"onclick="show(event)">'+item.id+"</p>";
@@ -45,7 +44,7 @@
      function show(event){
         list.forEach(function(item) {
           if(item.id===event.target.id){
-            document.getElementById("space").innerHTML="";
+            document.getElementById("space").innerHTML="<h3><b>"+item.id+"</b></h3>";
             document.getElementById("content").innerHTML=item.text+'<br><a style="color:#5C90FF;" href="" onClick="window.location.reload()">목록으로</a>';
           }
         });
