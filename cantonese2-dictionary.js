@@ -8,6 +8,6 @@ var dictionary = [
   {word:"紙",pronounce:"zi",meaning:"종이",ex:"<br>"},
   {word:"今",pronounce:"gam",meaning:"금방, 막, 방금, 이제",ex:"<br>"},
   {word:"互",pronounce:"wu",meaning:"서로",ex:"<br>"},
-  {word:"相",pronounce:"상대, 상대방",meaning:"",ex:"<br>"},
-  {word:"飯",pronounce:"먹이, 밥, 식사",meaning:"",ex:"<br>"}
+  {word:"相",pronounce:"soeng",meaning:"상대, 상대방",ex:"<br>"},
+  {word:"飯",pronounce:"faan",meaning:"먹이, 밥, 식사",ex:"<br>"}
 ];
