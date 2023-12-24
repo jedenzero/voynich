@@ -56,8 +56,8 @@
         imsi.forEach(function(item) {
           if(item.word.includes(input)||item.meaning.includes(input)) {
             result+='<div class="boxbox">'+"<br>"+'<div style="text-align:left;"><b style="font-size:20px;display:inline-block;">'+item.word+"</b>";
-            if(item.origin!=null){
-               result+='<div style="color:#FF5C8F;font-size:12px;display:inline-block;margin-left:5px;">'+item.origin+"</div>";
+            if(item.pronounce!=null){
+               result+='<div style="color:#FF5C8F;font-size:12px;display:inline-block;margin-left:5px;">'+item.pronounce+"</div>";
             }
             result+='<div style="font-size:15px;">'+item.meaning+"</div>";
             if(item.comment!=null){
