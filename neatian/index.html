@@ -23,7 +23,7 @@
       function make() {
           var result="<h3><b>강좌</b></h3>";
           list.forEach(function(item) {
-            if (type="ls")
+            if (item.type="ls")
             result+='<a href="'+item.title+'.html">'+item.title+"</a>";
           });
           document.getElementById("imsi1").innerHTML=result;
