@@ -8,6 +8,12 @@ body{
      font-size:15px;
      background-color:#FAFAFA;
 }
+header{
+     width:100%;
+     background-color:#FAFAFACC;
+     padding:30px;
+     border-bottom:1px solid #CEDBF5;
+}
 contain{
      width:250px;
      padding-top:40px;
