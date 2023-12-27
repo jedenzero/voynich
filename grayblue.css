@@ -9,10 +9,13 @@ body{
      background-color:#FAFAFA;
 }
 header{
+     position:sticky;
      width:100%;
      background-color:#FAFAFACC;
-     padding:30px;
+     padding:10px;
      border-bottom:1px solid #CEDBF5;
+     backdrop-filter:blur(6px);
+     -webkit-backdrop-filter: blur(6px);
 }
 contain{
      width:250px;
