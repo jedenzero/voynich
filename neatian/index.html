@@ -22,21 +22,21 @@
           var result="<h3><b>강좌</b></h3>";
           list.forEach(function(item) {
             if (item.type==="ls")
-            result+='<a href="'+item.title+'.html">'+item.title+"</a>";
+            result+='<p><a href="'+item.title+'.html">'+item.title+"</a></p>";
           });
           document.getElementById("imsi1").innerHTML=result;
           
           result="<h3><b>도구</b></h3>";
           list.forEach(function(item) {
             if (item.type==="tl")
-            result+='<a href="'+item.title+'.html">'+item.title+"</a>";
+            result+='<p><a href="'+item.title+'.html">'+item.title+"</a></p>";
           });
           document.getElementById("imsi2").innerHTML=result;
           
           result="<h3><b>글</b></h3>";
           list.forEach(function(item) {
             if (item.type==="wr")
-            result+='<a href="'+item.title+'.html">'+item.title+"</a>";
+            result+='<p><a href="'+item.title+'.html">'+item.title+"</a></p>";
           });
           document.getElementById("imsi3").innerHTML=result;
        }
