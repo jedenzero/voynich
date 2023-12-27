@@ -6,6 +6,7 @@
 	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	  <title>네어트어</title>
   </head>
+  <style src="grayblue.css"></style>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap');
     @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css");
@@ -15,6 +16,7 @@
       color:#282828;
       font-weight:100,700;
       font-size:15px;
+      background-color:#FAFAFA;
     }
     contain{
       width:250px;
@@ -42,21 +44,21 @@
       function make() {
           var result="<h3><b>강좌</b></h3>";
           list.forEach(function(item) {
-            if (item.type="ls")
+            if (item.type==="ls")
             result+='<a href="'+item.title+'.html">'+item.title+"</a>";
           });
           document.getElementById("imsi1").innerHTML=result;
           
           result="<h3><b>도구</b></h3>";
           list.forEach(function(item) {
-            if (item.type="tl")
+            if (item.type==="tl")
             result+='<a href="'+item.title+'.html">'+item.title+"</a>";
           });
           document.getElementById("imsi2").innerHTML=result;
           
           result="<h3><b>글</b></h3>";
           list.forEach(function(item) {
-            if (item.type="wr")
+            if (item.type==="wr")
             result+='<a href="'+item.title+'.html">'+item.title+"</a>";
           });
           document.getElementById("imsi3").innerHTML=result;
