@@ -21,11 +21,21 @@
       padding:20px;
       margin:0 auto;
     }
+    h3{
+      color:#1D2F52;
+    }
+    a,p{
+      color:#374052;
+    }
+    a{
+      text-decoration:none;
+    }
   </style>
   <body>
     <div class="contain">
     <p style="text-align:center;" id="imsi1"></p>
     <p style="text-align:center;" id="imsi2"></p>
+    <p style="text-align:center;" id="imsi3"></p>
     </d>
     <script src="neatian-list.js"></script>
     <script>
@@ -36,6 +46,20 @@
             result+='<a href="'+item.title+'.html">'+item.title+"</a>";
           });
           document.getElementById("imsi1").innerHTML=result;
+          
+          result="<h3><b>도구</b></h3>";
+          list.forEach(function(item) {
+            if (item.type="tl")
+            result+='<a href="'+item.title+'.html">'+item.title+"</a>";
+          });
+          document.getElementById("imsi2").innerHTML=result;
+          
+          result="<h3><b>글</b></h3>";
+          list.forEach(function(item) {
+            if (item.type="wr")
+            result+='<a href="'+item.title+'.html">'+item.title+"</a>";
+          });
+          document.getElementById("imsi3").innerHTML=result;
        }
        make();
     </script>
