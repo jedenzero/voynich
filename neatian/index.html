@@ -9,7 +9,7 @@
   </head>
   <body>
     <div class="header">
-      <p style="margin-top:10px;padding-left:20px;color:#1D2F52;text-size:25px;"><a href="https://jedenzero.github.io/voynich/neatian/">NEĂTĂK</a></p>
+      <a style="vertical-align:middle;padding-left:20px;color:#1D2F52;text-size:25px;" href="https://jedenzero.github.io/voynich/neatian/">NEĂTĂK</a>
     </div>
     <div class="contain">
     <p id="imsi1"></p>
@@ -22,7 +22,7 @@
           var result="<h3><b>강좌</b></h3>";
           list.forEach(function(item) {
             if (item.type==="ls")
-            result+='<p><a href="'+item.title+'.html">'+item.title+"</a></p>";
+            result+='<p style="padding-left:5px;"><a href="'+item.title+'.html">'+item.title+"</a></p>";
           });
           document.getElementById("imsi1").innerHTML=result;
           
