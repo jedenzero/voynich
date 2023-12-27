@@ -16,14 +16,14 @@ function make() {
     result="<h3><b>도구</b></h3>";
     list.forEach(function(item) {
         if (item.type==="tl")
-            result+='<p><a href="'+item.title+'.html">'+item.title+"</a></p>";
+            result+='<p style="padding-left:5px;"><a href="'+item.title+'.html">'+item.title+"</a></p>";
     });
     document.getElementById("imsi2").innerHTML=result;
           
     result="<h3><b>글</b></h3>";
     list.forEach(function(item) {
         if (item.type==="wr")
-            result+='<p><a href="'+item.title+'.html">'+item.title+"</a></p>";
+            result+='<p style="padding-left:5px;"><a href="'+item.title+'.html">'+item.title+"</a></p>";
     });
     document.getElementById("imsi3").innerHTML=result;
     }
