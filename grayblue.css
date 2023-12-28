@@ -8,6 +8,7 @@ body{
      font-size:12px;
      background-color:#FAFAFA;
      word-break:keep-all;
+     line-height:50%;
 }
 .header{
      position:sticky;
