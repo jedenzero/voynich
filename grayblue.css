@@ -29,9 +29,11 @@ body{
 }
 .badge{
      display:inline-block;
-     height:10px;
+     height:20px;
+     padding-left:5px;
+     padding-right:5px;
      border:1px solid #CEDBF5;
-     border-radius:5px;
+     border-radius:50%;
 }
 h2,h3{
      color:#1D2F52;
