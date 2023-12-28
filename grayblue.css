@@ -5,8 +5,9 @@ body{
      font-family:"Montserrat","Noto Sans","Pretendard";
      color:#282828;
      font-weight:100,700;
-     font-size:15px;
+     font-size:12px;
      background-color:#FAFAFA;
+     word-break:keep-all;
 }
 .header{
      position:sticky;
@@ -21,12 +22,15 @@ body{
      -webkit-backdrop-filter: blur(4px);
 }
 .contain{
-     width:220px;
+     width:240px;
      padding:20px;
      margin:0 auto;
 }
-h3{
+h2,h3{
      color:#1D2F52;
+}
+h2{
+     font-weight:100px;
 }
 a,p{
      color:#374052;
