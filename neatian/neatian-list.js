@@ -23,7 +23,7 @@ function make() {
     result="<h3><b>글</b></h3>";
     list.forEach(function(item) {
         if (item.type==="wr")
-            result+='<p style="padding-left:5px;"><a href="'+item.title+'.html">'+item.title+"</a></p>";
+            result+='<p style="padding-left:5px;">'+'<div class="badge" style="margin-right:5px;">'+item.detail+'</div><a href="'+item.title+'.html">'+item.title+"</a></p>";
     });
     document.getElementById("imsi3").innerHTML=result;
     }
